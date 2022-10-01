@@ -6,4 +6,4 @@ Kullanımı oldukça basittir.
   - Muhasebe bilgileri
   - Veresiye listesi
   
-! LocalStroge üzerine kayıt etmemin sebebi işlemlerin hızlı olması gerekmesindendir. İstendiği takdirde işlerler web üzerine taşınılabilir.  
+! LocalStroge üzerine kayıt etmemin sebebi işlemlerin hızlı olması gerekmesindendir. İstendiği takdirde işlemler web üzerine taşınılabilir.  
