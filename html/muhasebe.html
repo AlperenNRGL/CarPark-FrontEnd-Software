@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/muhasebe.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid ms-5">
+        <a class="navbar-brand" href="index.html">Nuroğlu Otopark</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="veresiyeList.html">Veresiye Listesi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="islemGecmisi.html">İşlem Geçmişi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="muhasebe.html">Muhasabe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h1>Muhasebe</h1>
+      <p>Burada günlük kazançlarınız listelenecektir. <span class="text-decoration-underline"> Günlük kazançlara
+          veresiyede dahildir.</span> Yani kasadaki para miktarı ile günlük kazanç uyuşmamaktadır. İsterseniz kasadaki
+        para miktarına bakarak kasadaki gerçek para miktarını öğrenebilirisiniz.<strong> Böbürlenme insanoğlu mülkün
+          sahibi Allahtır.</strong></p>
+      <p>Kasadaki olması gereken para miktarı: <button 
+          class="fw-bold btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+      </p>
+      <div id="muhasebe-list"></div>
+    </div>
+
+    <!-- Kasadaki Para Miktarı Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kasadaki para miktarını değiştirmek istediğinize eminmisiniz
+              ? </h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body">
+            <div class="d-flex">
+              <div>
+                Kasada olması gereken para miktarını sağ tarafta belirtilen kutucuğa giriniz.
+              </div>
+              <form class="input-group">
+                <input type="text" pattern="\d" class="form-control fs-1" id="floatingInput">
+                <span class="input-group-text">₺</span>
+              </form>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Kapat</button>
+            <button type="button" class="btn btn-success" onclick="kasadakiParaBtn()">Değişiklikleri Kaydet</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/muhasebeJs/muhasebe.js"></script>
+  </body>
+
+</html>

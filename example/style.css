@@ -1,0 +1,44 @@
+/* // SVG styles. */
+svg {
+  animation: 2s linear infinite svg-animation;
+  max-width: 200px;
+  min-height: 200px;
+  position: absolute;
+}
+body {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  /* filter: drop-shadow(0px 2px 3px #494949b2); */
+  background-color: #eeeeee;
+}
+/*// Circle styles.*/
+.circle {
+  display: block;
+  fill: transparent;
+  stroke: #64676b;
+  stroke-linecap: round;
+  stroke-dasharray: 1130;
+  stroke-dashoffset: 600;
+  stroke-width: 7px;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+  /* transition: 1s ease-in-out; */
+}
+
+.c-seconds {
+  stroke: #e91e63;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  font-size: 18px;
+  color: #64676b;
+}
